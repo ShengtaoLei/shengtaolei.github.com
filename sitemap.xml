@@ -1,15 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://shengtaolei.github.io/blog/archives/</loc>
-        <lastmod>2013-07-03T21:46:39+08:00</lastmod>
+        <loc>http://ShengtaoLei.github.io/blog/2013/07/03/di-%5B%3F%5D-pian/</loc>
+        <lastmod>2013-07-03T21:58:44+08:00</lastmod>
     </url>
     <url>
-        <loc>http://shengtaolei.github.io/</loc>
-        <lastmod>2013-07-03T21:46:39+08:00</lastmod>
+        <loc>http://ShengtaoLei.github.io/blog/archives/</loc>
+        <lastmod>2013-07-03T21:58:44+08:00</lastmod>
     </url>
     <url>
-        <loc>http://shengtaolei.github.io/robots.txt</loc>
+        <loc>http://ShengtaoLei.github.io/</loc>
+        <lastmod>2013-07-03T21:58:44+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ShengtaoLei.github.io/robots.txt</loc>
         <lastmod>2013-07-03T21:46:39+08:00</lastmod>
     </url>
 </urlset>
