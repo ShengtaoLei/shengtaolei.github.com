@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Scott Lei's Blog]]></title>
+  <link href="http://shengtaolei.github.io/atom.xml" rel="self"/>
+  <link href="http://shengtaolei.github.io/"/>
+  <updated>2013-07-03T21:51:20+08:00</updated>
+  <id>http://shengtaolei.github.io/</id>
+  <author>
+    <name><![CDATA[雷升涛(Scott Lei)]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
