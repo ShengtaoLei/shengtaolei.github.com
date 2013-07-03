@@ -4,7 +4,7 @@
   <title><![CDATA[Scott Lei's Blog]]></title>
   <link href="http://ShengtaoLei.github.io/atom.xml" rel="self"/>
   <link href="http://ShengtaoLei.github.io/"/>
-  <updated>2013-07-03T22:14:59+08:00</updated>
+  <updated>2013-07-03T23:06:58+08:00</updated>
   <id>http://ShengtaoLei.github.io/</id>
   <author>
     <name><![CDATA[雷升涛(Scott Lei)]]></name>
@@ -14,18 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[第一篇]]></title>
+    <title type="html"><![CDATA[职业水准]]></title>
     <link href="http://ShengtaoLei.github.io/blog/2013/07/03/di-%5B%3F%5D-pian/"/>
     <updated>2013-07-03T21:58:00+08:00</updated>
     <id>http://ShengtaoLei.github.io/blog/2013/07/03/di-[?]-pian</id>
-    <content type="html"><![CDATA[
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">[</span><span class="n">rectangle</span> <span class="nl">setX:</span> <span class="mi">10</span> <span class="nl">y:</span> <span class="mi">10</span> <span class="nl">width:</span> <span class="mi">20</span> <span class="nl">height:</span> <span class="mi">20</span><span class="p">];</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
+    <content type="html"><![CDATA[<p>当我看看到别</p>
 ]]></content>
   </entry>
   
