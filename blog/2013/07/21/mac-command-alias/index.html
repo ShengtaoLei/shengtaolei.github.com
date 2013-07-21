@@ -5,11 +5,20 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: 杂记 - Scott Lei's Blog</title>
+  <title>一个命令登陆阿里云服务器 - Scott Lei's Blog</title>
   <meta name="author" content="雷升涛(Scott Lei)">
 
   
-  <meta name="description" content="Category: 杂记">
+  <meta name="description" content="第一步：将自己的SSH公钥放到服务器上。 1
+2
+3
+4
+5
+cd ~/.ssh/
+scp id_rsa.pub username@server:~/.ssh/id_rsa.pub
+ssh username@server
+cd ~/.ssh
+cat id_rsa.pub >> &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +27,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ShengtaoLei.github.ioblog/categories/za-ji">
+  <link rel="canonical" href="http://ShengtaoLei.github.io/blog/2013/07/21/mac-command-alias">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="" rel="alternate" title="Scott Lei's Blog" type="application/atom+xml">
@@ -64,36 +73,119 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: 杂记</h1>
+    
+      <h1 class="entry-title">一个命令登陆阿里云服务器</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-21T13:29:00+08:00" pubdate data-updated="true">Jul 21<span>st</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>第一步：将自己的SSH公钥放到服务器上。</p>
 
-  
-  <h2>2013</h2>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/.ssh/
+</span><span class='line'>scp id_rsa.pub username@server:~/.ssh/id_rsa.pub
+</span><span class='line'>ssh username@server
+</span><span class='line'>cd ~/.ssh
+</span><span class='line'>cat id_rsa.pub >> authorized_keys</span></code></pre></td></tr></table></div></figure>
 
-<article>
-  
-<h1><a href="/blog/2013/07/05/recent-half-year/">最近这半年</a></h1>
-<time datetime="2013-07-05T22:51:00+08:00" pubdate><span class='month'>Jul</span> <span class='day'>05</span> <span class='year'>2013</span></time>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/za-ji/'>杂记</a></span>
-</footer>
+<p>这个时候，登陆阿里云服务器已经不需要输入密码了。</p>
+
+<p>第二步：为登陆远程服务器建立简单的别名。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>vim ~/.bash_profile
+</span><span class='line'>alias ali='ssh username@server'
+</span><span class='line'>:wq
+</span><span class='line'>source ~/.bash_profile
+</span><span class='line'>
+</span><span class='line'>然后输入 ali 就可以登陆到服务器上了</span></code></pre></td></tr></table></div></figure>
 
 
-</article>
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">雷升涛(Scott Lei)</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-21T13:29:00+08:00" pubdate data-updated="true">Jul 21<span>st</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/07/05/recent-half-year/" title="Previous Post: 最近这半年">&laquo; 最近这半年</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -140,7 +232,10 @@
       var disqus_shortname = 'scottlei';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://ShengtaoLei.github.io/blog/2013/07/21/mac-command-alias/';
+        var disqus_url = 'http://ShengtaoLei.github.io/blog/2013/07/21/mac-command-alias/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
